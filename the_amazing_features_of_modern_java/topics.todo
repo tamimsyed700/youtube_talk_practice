@@ -1,0 +1,71 @@
+The Amazing Features of Modern Java
+Venkat Subramaniam
+http://www.agiledeveloper.com/downloads.html
+venkats@agiledeveloper.com
+Twitter: @venkat_s
+
+The Evolution of Java:
+-Java 8 was a big change
+-Java 9 added modules
+-Then the six months release cycle started
+
+Switch Expressions:
+-The Java of the Past
+-switch expression
+-automatic breaks
+-multiple match
+-multiline cases
+
+Text Blocks:
+-The Java of the Past
+-Creating a multiline string
+-No need to escape
+-Smart indentations
+-trailing space handling
+-New escapes
+ \
+ \s
+-formatting
+ -replace
+ -formatted
+
+Records:
+-The Java of the Past
+-data classes
+-immutability
+-getting the properties
+-toString
+-no extends (Record is the implicit base)
+-implicitly final
+-interfaces
+-Adding a canonical constructor
+-adding methods
+-Local Records
+
+Sealed Classes and Interfaces:
+-The Java of the Past
+-Abstract base classes
+-final classes
+-Algebraic Data Types
+-Creating Sealed Classes
+-permits
+
+Pattern Matching:
+-benefits
+-pattern matching with instanceof
+-from if to a switch
+-Type matching
+-null matching
+-matching with null and type
+-dominance
+-completeness
+ -with sealed classes
+ -what if the classes change?
+-guarded pattern
+-guarded pattern and dominance
+
+Summary:                                            
+
+Downloads:
+http://www.agiledeveloper.com/downloads.html
+

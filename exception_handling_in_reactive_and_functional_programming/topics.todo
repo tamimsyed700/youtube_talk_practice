@@ -1,0 +1,46 @@
+Exception Handling in Functional and Reactive Programming
+Venkat Subramaniam
+Email: venkats@agiledeveloper.com
+Twitter: @venkat_s
+
+-Functional Programming
+-Functional pipeline or functional composition
+-Lazy evaluation
+-Reactive programming == Functional Programing++
+
+-Exception Handling
+-Fundamentally an imperative Style of Programming idea
+-An imperativer style code in Java
+-Dealing with exception in Java
+
+-Converting that to functional style in Java
+-https://twitter.com/venkat_s/status/1454804774885335055
+-What gives?
+
+-How do functional programming languages handle this?
+-The Haskell Way
+-A look at Scala's Try
+-What is good about it?
+-What is rather unpleasant about it?
+
+-The Railway model in JavaScript's Promises and Java's CompletableFuture
+
+If all is well, you keep moving no the top track
+If there is a failure, you go down to the bottom track
+If you recover from the failure, you are back on the top track
+
+==d==d==d============d==d==d============================
+          \         /       \
+============e==e==e===========e==e==e===================
+
+-What is good about it?
+-What is rather unpleasant about it?
+
+-The Reactive Stream approach
+-What is good about it?
+-What is rather unpleasant about it?
+
+-Discussions
+
+Download:
+https://agiledeveloper.com/downloads.html

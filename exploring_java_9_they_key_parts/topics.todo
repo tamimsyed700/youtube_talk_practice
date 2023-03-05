@@ -1,0 +1,166 @@
+Exploring Java 9: The Key Parts
+Venkat Subramaniam
+Email: venkats@agiledeveloper.com
+Twitter: @venkat_s
+http://www.agiledeveloper.com download link
+
+Exciting things in Java 9:
+-improvements/changes
+-additions
+-advances
+
+Improvements/Changes:
+-interface private methods
+-effectively final in try-with-resources
+-No _
+-Stream takeWhile, dropWhile
+-IntStream iterate
+ -without bounds
+ -with bounds
+-Optional 
+ -ifPresentOrElse
+ -or
+ -stream
+
+Additions:
+-The of methods
+ -type
+ -special for 1 or 2 values
+ -larger number of elements
+-CompletableFuture copy, completeOnTimeout
+ -completing copy
+ -completing the original
+-StackWalker
+- JShell
+
+JShell, The REPL for Java:
+-What's REPL?
+-Why should we use REPL?
+ -facilitating fine grained incremental development
+ -prototyping
+ -experimenting
+ -learning tool
+-start jshell
+-hello JShell
+-snippets of code
+-try an expression 4 + 2     
+-to exit type /exit or ctrl + d
+-up arrow
+-down arrow
+-Ctrl+A
+-Ctrl+E       
+-snippet completion                 
+-/!
+-/<id>
+-/-<n>         
+-/imports
+-/list
+-/save
+-/reset to reset the environment
+-/var or /v
+-type method call up to ( and then hit shift+tab
+-/edit variablename
+-/drop                      
+-semicolons
+-throws / try-catch
+-limitations
+-define variables
+ -infer type from expression <fix-shortcut> v
+-redefine variables
+-redefine with different types
+-define methods   
+-redefine methods
+-define a class
+-define an interface
+-/methods or /m
+-/types or /t
+-forward references
+-/history 
+
+Advances:
+- Modularization
+
+Modules:
+-What's the problem?
+ - large jars, especially rt.jar
+ - lack of clarify on dependencies
+ - public is too open
+ - late runtime failures
+-Packages into modules
+-JDK is modularized, we can modularize our code same way
+-Rule: no cycles at compile time
+-What's a module?
+  - a collection of code (packages) and data
+  - has a name
+  - tells what it needs (requires)
+  - tells what it provides (exports)
+ 
+Creating Modules:
+- Let's define a module
+- module-info.java in a top level directory
+- requires
+- exports
+- create a module
+- exports to
+
+Visibility:
+- Readability
+	- A module "reads" the modules it depends on
+- exports
+- public is not the same any more
+- public + exports becomes visible
+- public with no exports is not visible
+- that's both at compile time and runtime
+
+Implied Readability:
+- Passing on what you use to your uses
+- Explicit requires
+- implicit requires
+- exports to and implied readability
+
+Encapsulation & Reflection:
+-Deep Reflection
+-open module
+-opens package                   
+
+Service Loader API:
+-Inversion of Control
+-ServiceLoader API
+-provides X with Y
+-uses X
+-ServiceLoader.load
+-ServiceLoader and instances
+-reload
+-provider method vs. constructor
+-stream of providers
+
+Targeted Linking:        
+- linking custom runtime image
+  - targeted executable
+  -jlink
+	- jlink --modulepath mlib1:mlib2 --addmods mlib1 --addmods mlib2 --output myapp
+	- ./myapp/bin/java -listmods
+	- ./myapp/bin/java -m modulename  
+	
+	or
+	
+	- ./myapp/bin/myappname
+
+Transitioning:
+- automatic modules
+  - good old jars in the modules path
+	-use when transitioning your code that uses non-modularized code
+	
+Grandfathering:
+- Running pre-Java 9 code under Java 9
+ - unnamed modules
+   - all on classpath is in one big unnamed module
+   - it reads every named module
+   - it exports all its packages  
+   - code in a named module can't depend on code in an unnamed module
+
+Summary:
+
+Download:
+
+http://www.agiledeveloper.com download link

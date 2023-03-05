@@ -1,0 +1,60 @@
+The Features of Modern Java and Their Benefits
+Venkat Subramaniam
+Email: venkats@agiledeveloper.com
+Twitter: @venkat_s
+http://www.agiledeveloper.com download link
+  
+The Evolution of Java:
+-No longer that slow moving Java
+-The New Release Cadence
+
+Goals for the evolution:
+-Reduce verbosity
+-Programmer productivity
+-Make things more secure
+-Adapt to changing business needs
+
+Evolution on Two Fronts:
+-Language evolution (our focus in this presentation)
+-JDK Evolution (we will not focus on this)
+
+Java 8: Evolution to Functional Programming:
+-Old Java: imperative + object-oriented
+-New Java: imperative + object-oriented + functional
+
+Java 9: Modularization of Java:
+-interface private methods
+-finalize deprecated
+-effectively final in try-with-resources
+-diamond operator and anonymous inner classes
+-modules
+
+Java 10: Local Variable Type Inference:
+-Type inference
+-How does it work?
+-Where can we use?
+-Where can't we use?
+-To use or not to use?
+
+Java 11: Improvements to Type Inference of Lambda Parameters:
+-Previous limitations
+-var for parameter
+-When to use
+-Limitations
+
+Java 12: Switch Expressions:
+-from statement
+-to expression
+-benefits
+
+Java 13: Text Blocks:
+-Verbosity dealing with multiline strings
+-text blocks
+-smart implementation
+
+Java 14: Reduced Boilerplate:
+-smart casting
+-records
+
+Discussions:
+-discussions

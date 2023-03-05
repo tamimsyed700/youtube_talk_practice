@@ -1,0 +1,40 @@
+A Deep Dive into CompletableFutures
+Venkat Subramaniam
+Email: venkats@agiledeveloper.com
+Twitter: @venkat_s
+http://www.agiledeveloper.com download link
+  
+Topics:
+-Asynchronous programming
+-Callbacks don't help
+  -lacks consistency
+  -hard to compose
+  -hard to deal with errors
+-Lessons from JavaScript Promises
+ -may resolve, reject, or be pending
+ -data channel and error channel
+ -failure/error is like data
+ -easy to compose
+-How promises chain
+-Promises in Java
+-stages
+-creating a completable future
+-observing the thread
+-the true non-blocking nature
+-changing the pool
+-async vs. non-async
+-pipeline continues forever
+-thenAccept
+-thenApply
+-thenRun
+-creating pipe, then completing
+-dealing with exceptions
+-failing on exception
+-recovering from an exception
+-succeed on timeout
+-fail on timeout
+-thenCombine
+-thenCompose
+
+You can download this topics list and code examples from:
+	http://www.agiledeveloper.com	 - downloads link

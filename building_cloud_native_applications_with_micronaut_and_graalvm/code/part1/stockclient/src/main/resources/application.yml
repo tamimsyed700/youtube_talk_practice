@@ -1,0 +1,8 @@
+micronaut:
+  application:
+    name: stockclient
+  http:
+    services:
+      stockclient:
+        urls:
+          http://localhost:8080/

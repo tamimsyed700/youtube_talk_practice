@@ -1,0 +1,17 @@
+Here are the steps to install the Eclipse AspectJ Plugin for Eclipse 3.0.
+
+We assume that you have installed Eclipse (http://www.eclipse.org).
+
+To install the plugin (Instructions from AJDT site http://www.eclipse.org/ajdt):
+[Note: Where it says "Add Update Site..." button, it should read "New Remote Site..." button.
+Where it says URL from top of this page, type 
+http://download.eclipse.org/technology/ajdt/30M8/update]
+
+Start Eclipse, and from the Help menu choose "Software Updates" -> "Find and Install... " 
+In the "Install/Update " view that opens, select "Search for new features to install" and click "Next". 
+In the Install dialog that appears, press the "Add Update Site..." button. 
+In the "New Update Site" dialog that appears, enter a name, "AJDT Update Site". and the appropriate URL from the table at the top of this page. Click Finish 
+Expand the AJDT Update Site node that appears, and select "AspectJ". Press "Next" 
+You should now see a window showing features available from the update site. Select "Eclipse AspectJ Development Tools" and press "Next". 
+On the next page, read and accept the standard license agreement. Press "Next" again. 
+On the final page, click "Finish" then step through the installation popups that appears to complete installation. 

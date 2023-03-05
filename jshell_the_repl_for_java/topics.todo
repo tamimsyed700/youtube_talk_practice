@@ -1,0 +1,84 @@
+JShell: The REPL for Java
+Venkat Subramaniam
+Email: venkats@agiledeveloper.com
+Twitter: @venkat_s
+http://www.agiledeveloper.com download link
+
+REPL:
+-What's REPL?
+-Why should we use REPL?
+ -facilitating fine grained incremental development
+ -prototyping
+ -experimenting
+ -learning tool
+
+jShell Basics:
+-start jshell
+-hello JShell
+-snippets of code
+-try an expression 4 + 2     
+-to exit type /exit or ctrl + d
+
+Moving Around:
+-up arrow
+-down arrow
+-Ctrl+A
+-Ctrl+E       
+-snippet completion                 
+-/!
+-/<id>
+-/-<n>         
+                     
+Default imports:
+-/imports
+
+Commands:
+-/list
+-/save
+-/reset to reset the environment
+
+Examining variables and signature:
+-/var or /v
+-type method call up to ( and then hit shift+tab
+-/edit variablename
+-/drop                      
+
+Semi-Optional Items:
+-semicolons
+-throws / try-catch
+-limitations
+
+Defining methods and classes:
+-define variables
+ -infer type from expression <fix-shortcut> v
+-redefine variables
+-redefine with different types
+-define methods   
+-redefine methods
+-define a class
+-define an interface
+-/methods or /m
+-/types or /t
+-forward references
+
+Miscellaneous Commands:
+-/history 
+-/reload
+	-with -quiet
+	-with -restore
+
+Configuring jshell:
+-/set
+-/set feedback verbose
+-/set feedback silent
+-/set feedback normal
+-/set mode modename existingmode -quiet
+-/set prompt modename ">" "|"
+-/set feedback modename
+
+Command line options:
+- --no-startup
+-startup filename           
+
+Summary:
+

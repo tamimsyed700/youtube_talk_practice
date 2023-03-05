@@ -1,0 +1,29 @@
+Parallel Programming with Java 8 Streams
+Venkat Subramaniam
+Email: venkats@agiledeveloper.com
+Twitter: @venkat_s
+http://www.agiledeveloper.com download link
+
+✓Programming concurrency
+✓Divide and conquer vs. parallel arrays
+✓Where does parallel streams fit in?
+✓stream to parallel stream
+✓observing threads
+✓order of execution
+✓controlling the order
+✓parallel and filter
+✓parallel and map
+✓parallel and reduce
+✓Using parallel streams
+ ✓on an IO problem
+ ✓on a computational problem
+✓How many threads?
+✓Formula to decide number of threads
+✓Default number of threads
+✓Configuring number of threads JVM wide 
+	-Djava.util.concurrent.ForkJoinPool.common.parallelism=100
+✓Configuring programmatically
+✓Parallel does not always mean fast
+ ✓how to decide to make parallel
+✓When parallel makes no sense
+✓Summary

@@ -1,0 +1,57 @@
+plugins {
+    id("com.github.johnrengelman.shadow") version "7.0.0"
+    id("io.micronaut.application") version "1.5.3"
+}
+
+version = "0.1"
+group = "com.agiledeveloper.stockinfo"
+
+repositories {
+    mavenCentral()
+}
+
+micronaut {
+    runtime("netty")
+    testRuntime("junit5")
+    processing {
+        incremental(true)
+        annotations("com.agiledeveloper.stockinfo.*")
+    }
+}
+
+dependencies {
+    implementation("io.micronaut:micronaut-http-client")
+    implementation("io.micronaut:micronaut-runtime")
+    runtimeOnly("ch.qos.logback:logback-classic")
+    implementation("io.micronaut:micronaut-validation")
+    annotationProcessor("io.micronaut.data:micronaut-data-processor")
+    implementation("io.micronaut.data:micronaut-data-r2dbc")
+    implementation("io.micronaut.r2dbc:micronaut-r2dbc-core")
+    runtimeOnly("io.r2dbc:r2dbc-h2")
+    annotationProcessor("io.micronaut.openapi:micronaut-openapi")
+    implementation("io.swagger.core.v3:swagger-annotations")
+    implementation("au.com.dius:pact-jvm-provider-junit5:4.0.10")
+    implementation("au.com.dius:pact-jvm-consumer-junit5:4.0.10")
+    testImplementation("org.mockito:mockito-core:3.11.2")
+}
+
+
+application {
+    mainClass.set("com.agiledeveloper.stockinfo.Application")
+}
+java {
+    sourceCompatibility = JavaVersion.toVersion("1.8")
+    targetCompatibility = JavaVersion.toVersion("1.8")
+}
+
+tasks.withType(JavaCompile) {
+  options.fork = true
+  options.forkOptions.jvmArgs << '-Dmicronaut.openapi.views.spec=rapidoc.enabled=true,swagger-ui.enabled=true,swagger-ui.theme=flattop'
+}
+
+nativeImage {
+    imageName('stockinfo')
+}
+
+
+

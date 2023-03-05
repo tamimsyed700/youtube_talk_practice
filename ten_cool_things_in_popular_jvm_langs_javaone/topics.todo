@@ -1,0 +1,24 @@
+Ten cool things we can do with popular JVM Languages:
+  Venkat Subramaniam
+  Email: venkats@agiledeveloper.com
+  Twitter: @venkat_s
+  http://www.agiledeveloper.com download link
+  
+Topics:
+-Popular languages on the JVM
+- Why mix languages?
+-Ten cool things
+-1. Accessing a file - Groovy and Scala
+-2. Interacting with a process - Groovy
+-3. Execute Around Method Pattern - Java8
+-4. Joining strings in Groovy and Java8
+-5. Delegation in Groovy
+-6. Pattern matching in Scala
+-7. Creating XML documents in Groovy
+-8. Tail call optimization in Scala
+-9. Metaprogramming in Groovy
+-10. STM in Clojure
+- Summary
+
+You can download this topics list and code examples from:
+	http://www.agiledeveloper.com	 - downloads link

@@ -1,0 +1,66 @@
+- Programming with HTML5
+   Venkat Subramaniam
+   Email: venkats@agiledeveloper.com
+   Twitter: @venkat_s
+
+Programming with HTML5:
+✓ What's all the excitement about?
+
+HTML5 Indicator:
+<!DOCTYPE html>
+
+Specialized Descriptive Tags:
+  ✓ Avoid <div>, instead use specialized regions
+    ✓ header
+    ✓ footer
+    ✓ nav
+    ✓ section
+    ✓ article
+    ✓ aside
+
+CSS3 Pseudo-classes:
+  - nth-of-type
+  - nth-child
+  - last-child
+    - combining classes
+
+Targeted input types:
+  - email
+    - placeholders=""
+    - autofocus
+    - autocomplete="off"
+    - required
+  - url
+  - search
+  - number
+  - range
+  - date
+  - datetime
+  - color
+
+In-place editing:
+  - contenteditable="true" for example on a span tag
+  
+Appearance:
+  - border-radius for example border-radius: 10px;	
+  - transparency for example background-color: rgba(255, 255, 255, 0.50);
+  - box-shadow for example box-shadow: 15px 15px 15px #F0F0F0
+  - transform: rotate(degree)
+
+Drawing—Canvas:
+
+Drag and Drop:
+ - set draggable="true" data-company="whateverdata" for example on a p tag
+ - Write code to fulfill drag-drop
+ 
+Client-side data:
+  - What?
+  - Benefits
+  - local storage
+  - session storage
+  - web sql database
+  - offline web apps
+
+Summary:
+- http://validator.w3.org
+- http://www.w3.org/TR/html5

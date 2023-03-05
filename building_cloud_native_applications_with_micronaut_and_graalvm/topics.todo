@@ -1,0 +1,99 @@
+Building Cloud Native Applications with Micronaut and GraalVM
+Oleg Šelajev, Graeme Rocher, Venkat Subramaniam
+
+Part I: Creating Micronaut Applications for the JVM and GraalVM
+
+Part II: Creating for Microservices and Cloud Infrastructures
+
+Part I:
+
+What's Micronaut and Why:
+✔The demands of the modern world
+✔Microservices and Serverless computing
+✔Polyglot programming: Java, Groovy, and Kotlin
+✔Fast startup time
+  ✔compile time metaprogramming, no reflection
+✔high throughput
+✔small memory footprint
+✔convention over configuration
+✔sensible defaults
+✔dependency injection with compile time metaprogramming instead of reflection at runtime
+✔both conventional and reactive APIs
+✔Benefits
+  ✔Speed: of development, deployment, startup, and execution
+  ✔Small footprint
+  ✔declarative in nature
+  ✔compile time dependency injection
+  ✔Natively cloud-native
+  ✔built in circuit breakers
+  ✔compile-time metaprogramming
+ 
+Let's Create an Application:
+✔Starting with a service service
+✔Bean configurations
+  ✔@Singleton
+  ✔@context
+  ✔@Prototype
+  ✔@Infrastructure
+  ✔@RequestScope
+  ...
+✔Creating a controller
+✔Dependency injection of service into controller
+  ✔Constructor injection
+  ✔Field injection
+  ✔JavaBean property injection
+✔Creating a client
+
+Going Reactive:
+✔Reactive Programming
+✔Publishers and Subscribers
+✔Providing a Reactive Interface
+
+Deployment and Execution:
+✔Building for the JVM
+✔What's GraalVM
+✔Why GraalVM
+✔Building native image
+✔Comparing startup times and memory usage
+
+Discussions and What's in Part II:
+✔discussions
+✔what to look ahead in Part II
+
+Part II:
+What we did in part 1:
+-a quick review
+
+Service Discovery:
+-Configuring services
+-Using registry: Consul
+consul -> client -> registration:
+  enabled: true
+  defaultZone: "${CONSUL_HOST:localhost}:${CONSUL_PORT:8500}"
+
+-implementation("io.micronaut:micronaut-discovery-client")
+
+Load Balancing:
+-Default Round Robin selection
+-Using other algorithms
+
+Dealing with Failures:
+-Communication between services
+-retrying requests
+ -attempts - 3
+ -exponential delays - 1, 2, 3... seconds
+-Circuit breaker pattern
+ -a retryable which opens the circuit after the number of attempts
+  -reset - 20 seconds
+
+Using Micronaut Data:
+-No reflection or runtime proxies
+-Compile time AoT compilation of queries
+
+Using R2DBC:
+-Reactive solution
+
+Service Contracts:
+-Swagger documentation
+-Pact
+

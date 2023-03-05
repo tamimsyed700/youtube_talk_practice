@@ -1,0 +1,62 @@
+The Evolution of Java: 9, 10, 11, and 12
+Venkat Subramaniam
+http://www.agiledeveloper.com/downloads.html
+venkats@agiledeveloper.com
+Twitter: @venkat_s
+        
+Java 9:
+-interface private methods
+-effectively final in try-with-resources
+-No _
+-Stream takeWhile, dropWhile
+-IntStream iterate
+ -without bounds
+ -with bounds
+-Optional 
+ -ifPresentOrElse
+ -or
+ -stream
+-Collectors
+	-filtering
+	-flatMapping
+-The of methods
+ -type
+ -special for 1 or 2 values
+ -larger number of elements
+-CompletableFuture completeOnTimeout, orTimeout, ...
+- JShell
+-Modules
+	
+Java 10:
+-local variable type inference
+-Optional orElseThrow
+-Collector's
+  -toUnmodifiableList
+  -toUnmodifiableSet
+  -toUnmodifiableMap
+-List.copyOf, set, map
+ -unmodifiable
+ -shared instead of copy of original is immutable
+ -should not be null
+ -no null elements
+
+Java 11:
+-var for lambda local variables
+-Optional.isEmpty()
+-readString(Path.of(pathoffile))
+-writeString
+-Predicate's not
+ -convenient for method references
+-String changes
+  -lines
+  -repeat
+  -isBlank
+  -strip (like trim but full-width spaces)
+
+Java 12:
+-Switch Expression
+
+Summary:                                            
+
+Downloads:
+http://www.agiledeveloper.com/downloads.html

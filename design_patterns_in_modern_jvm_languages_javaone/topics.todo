@@ -1,0 +1,19 @@
+Design Patterns in Modern JVM Languages:
+  Venkat Subramaniam
+  Email: venkats@agiledeveloper.com
+  Twitter: @venkat_s
+  http://www.agiledeveloper.com download link
+
+Topics:
+- Why Patterns?
+- Problems with Patterns
+- Iterators in Java, Groovy, and Scala
+- Cascade
+  - method chaining - Groovy (and Java)
+  - fluency on multiple lines
+- Execute Around Method Pattern in Scala, Groovy, and Java
+- EAM in exception tests
+- Mixins and Traits
+- Traits and Decorators
+- Function Composition
+- Summary

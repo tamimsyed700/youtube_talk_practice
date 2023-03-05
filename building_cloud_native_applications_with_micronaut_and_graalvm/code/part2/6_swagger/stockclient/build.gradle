@@ -1,0 +1,46 @@
+plugins {
+    id("com.github.johnrengelman.shadow") version "7.0.0"
+    id("io.micronaut.application") version "1.5.3"
+}
+
+version = "0.1"
+group = "com.agiledeveloper.stockclient"
+
+repositories {
+    mavenCentral()
+}
+
+micronaut {
+    testRuntime("junit5")
+    processing {
+        incremental(true)
+        annotations("com.agiledeveloper.stockclient.*")
+    }
+}
+
+dependencies {
+    annotationProcessor("info.picocli:picocli-codegen")
+    implementation("info.picocli:picocli")
+    implementation("io.micronaut:micronaut-runtime")
+    implementation("io.micronaut:micronaut-http-client")
+    implementation("io.micronaut.picocli:micronaut-picocli")
+    runtimeOnly("ch.qos.logback:logback-classic")
+    implementation("io.micronaut:micronaut-validation")
+    implementation("io.micronaut.discovery:micronaut-discovery-client")
+    implementation("io.micronaut.data:micronaut-data-r2dbc")
+
+    testImplementation("io.micronaut:micronaut-http-client")
+
+}
+
+
+application {
+    mainClass.set("com.agiledeveloper.stockclient.StockclientCommand")
+}
+java {
+    sourceCompatibility = JavaVersion.toVersion("1.8")
+    targetCompatibility = JavaVersion.toVersion("1.8")
+}
+
+
+

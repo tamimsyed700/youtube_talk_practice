@@ -1,0 +1,72 @@
+Programming with Vert.x
+Venkat Subramaniam
+http://www.agiledeveloper.com
+venkats@agiledeveloper.com
+Twitter: @venkat_s
+
+Reactive Programming:
+-Why another programming model?
+-Key emphasis of Reactive Programming
+ -Elastic
+ -Message-driven
+ -Responsive
+ -Resilient
+
+-Not all is CRUD
+-Dataflow and streams
+
+RxJava:
+-Observable
+-Subscribing
+-data channel
+-complete channel
+-error channel
+-unsubscribing
+-filtering and transforming data
+
+Vert.x:
+-Single threaded event loop and handlers
+-Multiple event loops
+-Non-blocking and asynchronous          
+-no exception, instead a future with a failure or success
+-Running a http server
+	createHttpServer, requestHandler(HttpServerRequest), listen(port, ...)
+	AsyncResult<HttpServer>, succeed(), cause()
+-Verticles
+-Using a verticle
+ -Future<Void> startFuture, complete, fail
+
+Vert.x and RxJava:
+-RxJava wrappers
+-Rxified APIs
+-vert.x and Observable
+-Sending a data stream
+  httpServer.requestStream()
+  toObservable
+  response.setChunked(true);
+
+  Observable.interval(1, 1, TimeUnit.SECONDS)
+    .map(index -> response.write(index.toString()))
+    .limit(20)
+    .last()
+    .subscribe(
+      HttpServerResponse::end,
+      err -> System.out.println("ERROR: " + err));
+
+-Receiving a data stream
+	createHttpClient
+	httpClient.request(HttpMethod.GET, 8080, "localhost", "/");
+	
+	httpClientRequest.toObservable()
+    .flatMap(response -> response.toObservable())
+  
+    httpClientRequest.end();
+    httpClient.close();
+
+-EventBus
+-high availability
+-Polyglot system
+
+Summary:
+-Good for building Microservices
+-Event based reactive systems

@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '1.2.3'
+}
+
+group 'vertxsample'
+
+sourceCompatibility = 1.8
+jar.baseName = 'vertxsample'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+  compile "io.vertx:vertx-core:3.3.3"
+  compile group: 'io.vertx', name: 'vertx-rx-java', version: '3.3.3'
+}
+
+compileJava {
+    options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+}
+
+shadowJar {
+    classifier = 'fat'
+}
+
+task(runSample, type: JavaExec) {
+    main = 'agiledeveloper.Sample'
+    classpath 'build/libs/vertxsample-fat.jar'
+}
+
+defaultTasks 'clean', 'shadowJar'

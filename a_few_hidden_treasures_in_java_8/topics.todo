@@ -1,0 +1,23 @@
+A Few Hidden Treasures in Java 8
+Venkat Subramaniam
+Email: venkats@agiledeveloper.com
+Twitter: @venkat_s
+http://www.agiledeveloper.com download link
+  
+-Java 8
+-string joining
+-static interface methods
+-default methods
+-sorting
+-grouping and mapping
+-Combining Predicates and Functions
+-Map's convenience functions
+-Parallelizing streams
+ -default
+ - setting the thread pool size
+	-Djava.util.concurrent.ForkJoinPool.common.parallelism=100
+ -programmatic setting
+	-ForkJoinPool
+-Summary
+
+http://www.agiledeveloper.com download link

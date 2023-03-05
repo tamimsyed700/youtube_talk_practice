@@ -1,0 +1,23 @@
+Exploring Collectors
+Venkat Subramaniam
+Email: venkats@agiledeveloper.com
+Twitter: @venkat_s
+http://www.agiledeveloper.com download link
+
+-Java and Functional Programming
+-Common operations: filter, map, reduce
+-Functions should be pure
+-Avoid shared mutability
+-A little example
+-... gone wrong
+-The right way, delegate, be declarative, leave it to the APIs
+-toList, toSet
+-Should we not honor immutability?
+-toUnmodifiable...
+-joining
+-partitioning
+-grouping
+-...and mapping
+-...counting
+-...but what if we want ints and not longs?
+	-collectingAndThen(counting(), Long::intValue)

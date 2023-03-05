@@ -1,0 +1,23 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+jar.baseName = 'sparkexample'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+  compile group: 'org.apache.spark', name: 'spark-core_2.11', version: '2.1.0'
+}
+
+compileJava {
+    options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+}
+
+task(runSample, type: JavaExec) {
+    main = 'agiledeveloper.Sample'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+defaultTasks 'clean', 'jar'

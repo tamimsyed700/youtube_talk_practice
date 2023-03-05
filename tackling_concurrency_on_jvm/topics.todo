@@ -1,0 +1,29 @@
+Tackling Multicore Complexity on the JVM:
+- Why sudden interest in concurrency?
+- What does it offer?
+- Mutable vs. Immutable
+- Liveness hazards (Deadlock, starvation, livelock)
+  Visibility:
+- Concern of visibility
+  Race condition:
+  - atomicity
+  - explicit locks
+  - perils of multiple lock sections (Lock coarsening in Java 6)
+  - Granularity of lock
+  - Is a lock far reaching?
+  Publication and Escape:
+  - Creating a Singleton
+  - Singleton in Java
+  - Singleton in Scala
+  Working with Immutable state (Scala/Clojure):
+  - Actor based model with immutability
+  - Thread pooling, daemons, and actors
+  - Dealing with livelock with Within
+  - Easing Thread utilization even further with react/reactWithin
+  - Avoiding recursive call with loop/loopWithin
+  - Usage recommendations
+  Dealing with mutability (Clojure/Scala):
+  - Software Transaction Memory
+  - ACI[-D] Model
+  - When to use it?
+  Summary:

@@ -1,0 +1,48 @@
+header#navigation nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+header#navigation nav ul li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	width: 40%;
+	clear: both;
+}
+
+section#speakerslist article {
+	float: left;
+	width: 75%;
+}
+
+section#speakerslist aside {
+	float: right;
+	width: 25%;
+}
+
+footer#copyright {
+	clear: both;
+}
+
+th {
+	background-color: #000;
+	color: #fff;
+}
+
+tr:nth-of-type(even) {
+	background-color: #F1F1F1;
+}
+
+tr:nth-of-type(odd) {
+	background-color: #C1C1C1;
+}
+
+tr:last-child td:last-child {
+	font-weight: bolder;
+	background-color: #FF0;
+}

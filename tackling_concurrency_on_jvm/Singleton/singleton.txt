@@ -1,0 +1,10 @@
+Creating a threadsafe singleton that also preserves single instance
+creation is hard.
+
+You can try to use an enum in Java
+
+Scala singleton are first class citizens
+
+object Singleton { 
+  ...
+}

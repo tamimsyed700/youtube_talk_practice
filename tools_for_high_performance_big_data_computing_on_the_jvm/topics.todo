@@ -1,0 +1,61 @@
+Tools for High performance Big Data Computing on the JVM
+Venkat Subramaniam
+http://www.agiledeveloper.com
+venkats@agiledeveloper.com
+Twitter: @venkat_s
+
+Big Data:
+✓What's big data?
+✓Constraints
+✓Examples
+
+Major Concerns:
+✓Infrastructure
+✓Storage
+✓Processing
+✓Reactive/Microservices
+✓Distribution
+✓Analysis
+✓Visualization
+
+Infrastructure:
+✓Cloud based
+✓Elastic
+✓Multicore processors
+
+Storage:
+✓no SQL
+✓Types
+
+Processing:
+✓Batch vs. Streaming
+✓Batch
+  ✓Hadoop
+  ✓Spark  
+   ✓offers micro-batching(streaming)
+-Streaming
+ -Storm
+  -realtime stream processing
+  -machine learning
+
+Reactive/Microservices:
+-Vert.x
+-...
+
+Distribution:
+-Kafka
+ -distributed queue
+
+Analysis:
+-Splunk
+-Elasticsearch
+-RapidMiner
+  -Predictive Analysis
+	-Machine Learning Algorithm processing
+	-GUI based tool
+
+Visualization:
+-Lumify
+ -realtime Graph visualization and search
+
+Summary:

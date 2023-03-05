@@ -1,0 +1,1 @@
+Please see <http://blog.agiledeveloper.com/2008/09/prefer-conciseness-over-terseness.html>

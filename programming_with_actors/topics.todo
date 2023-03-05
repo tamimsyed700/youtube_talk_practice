@@ -1,0 +1,24 @@
+- Programming with Actors
+   Venkat Subramaniam
+   Email: venkats@agiledeveloper.com
+   Twitter: @venkat_s
+- Concurrency Challenges
+- Perils of shared mutability
+- Isolated mutability
+- What's an actor?
+- Type of messages
+  - SendOneWay()
+  - SendRequestReply()
+  - sendRequestReplyFuture()
+- Creating an actor
+- Actors and threads
+- Using actors
+- Typed Actors
+- Typed Actors and internal messages
+- Remote actors
+  - Actors.remote().start("localhost", 8000)
+      .register("myserver", Actors.actorOf(Server.class));
+  - Actors.registry().shutdownAll(); Actors.remote().shutdown();
+  - Actors.remote().actorFor("myserver", "localhost", 8000);
+- Limitations of actors
+- Conclusion

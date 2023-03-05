@@ -1,0 +1,19 @@
+Design Patterns in Modern JVM Languages
+Venkat Subramaniam (@venkat_s)
+venkats@agiledeveloper.com
+
+This presentation can be downloaded from
+http://www.agiledeveloper.com/downloads.html
+
+Design Patterns in Modern JVM Languages:
+- Why Patterns?
+- Abstract Factory in Groovy
+- Cascade (mail)
+- Fluency (mail)
+- Pluggable Behavior
+- Decorator
+- Execute Around Method Pattern
+- EAM in exception tests
+- Intercept, cache, Invoke pattern
+- Delegation
+- Summary

@@ -1,0 +1,22 @@
+Designing Functional Programs
+Venkat Subramaniam
+http://www.agiledeveloper.com
+venkats@agiledeveloper.com
+Twitter: @venkat_s
+
+-Functional programming
+-Assignment-less programming
+-Favor immutability
+-Higher-order functions
+-Function composition and lazy evaluations
+-Design concerns
+ -Purity of functions
+ -Practicality of immutability
+  -circle of purity, ring of impurity
+ -Thinking Functionally
+ -Dealing with exceptions
+  -the imperative mindset
+  -the functional mindset
+   -in Java 8 Streams
+   -in JavaScript Promises
+   -in Reactive Observable

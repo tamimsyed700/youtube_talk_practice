@@ -1,0 +1,74 @@
+<!DOCTYPE html5>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<html>
+<h2>Conference</h2>
+<header id="navigation">
+  <nav>
+    <ul>
+      <li><A href="sessions.html">Sessions</A></li>
+      <li>|</li>
+      <li><A href="schedule.html">Schedule</A></li>
+      <li>|</li>
+      <li><A href="speakers.html">Speakers</A></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="speakerslist">
+  <article>
+    <h3>Neal Ford</h3>
+    <p>ThoughtWorks</p>
+    <p><span id="requirements" contenteditable="true">Projector, large room</span></p>    
+  </article>
+  <aside>
+    <p>Meme Wrangler</p>
+  </aside>
+  <article>
+    <h3>Venkat Subramaniam</h3>
+    <p>Agile Developer</p>
+    <p><span id="requirements" contenteditable="true">Projector, safe distance from speaker</span></p>    
+  </article>
+  <aside>
+    <p>Recovering programmer</p>
+  </aside>
+  
+  <article>
+    <h3>Add Speaker</h3>
+    <form method="post">
+      <fieldset id="addspeaker">
+        <label>Name</label>
+        <input type="input" name="name" placeholder="firstname lastname" autofocus autocomplete="off" required></input>
+        <label>Email</label>
+        <input type="email" placeholder="name@example.com" required></input>
+        <label>Website</label>
+        <input type="url" name="theurl"></input>
+        <label>Talks</label>
+        <input type="number" name="talks" min="1" max="5" value="3"></input>
+        <label>Level</label>
+        <input type="range" name="level" min="1" max="10" value="7"></input>
+        <label>Arrival</label>
+        <input type="date" name="arrival"value="2012-02-24"></input>
+        <input type="submit"></input>
+      </fieldset>
+    </form>
+  </article>
+  
+</section>
+
+<section id="days">
+  <hr></hr>
+  <h3>Number of attendees</h3>
+  <table id="topics">
+    <tr><th>Topic</th><th>Attendees</th></tr>
+    <tr><td>HTML5</td><td>100</td></tr>
+    <tr><td>Concurrency</td><td>150</td></tr>
+    <tr><td>JavaScript</td><td>100</td></tr>
+    <tr><td>Total</td><td>350</td></tr>
+  </table>
+</section>
+
+<footer id="copyright">
+  <hr></hr>
+  <p>&copy; 2012-All rights reserved.</p>
+</footer>
+</html>

@@ -1,0 +1,23 @@
+A Dozen Cool Things We Can Do With Popular JVM Languages
+Venkat Subramaniam
+http://www.agiledeveloper.com
+venkats@agiledeveloper.com
+Twitter: @venkat_s
+
+-Popular languages on the JVM
+-Dozen cool things
+-1. Accessing a file - Groovy and Scala
+-2. Interacting with a process - Groovy
+-3. Execute Around Method Pattern - Java8
+-4. Traits in Scala
+-5. Joining Strings in Java8
+-6. Lazy in Scala and Kotlin
+-7. Pattern matching in Kotlin
+-8. Auto casting in Kotlin
+-9. Creating XML documents in Groovy
+-10. Tail call optimization in Kotlin
+-11. Extension methods in Kotlin
+-12. Fluency in Kotlin
+
+Download Code samples from:
+http://www.agiledeveloper.com/downloads.html

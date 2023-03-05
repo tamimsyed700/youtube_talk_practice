@@ -1,0 +1,78 @@
+Architectural Principles and Practices for building MicroServices
+Venkat Subramaniam
+http://www.agiledeveloper.com
+venkats@agiledeveloper.com
+Twitter: @venkat_s
+
+Monoliths:
+ -Components deployed mostly into one container
+ -Requires all parts for operation
+
+MicroService?:
+-What is it?
+ -A system of applications that collaborate
+ -Autonomous services
+ -Partitioned on business domain and not technology
+ -technology agnostic synchronous or asynchronous communication
+
+-What it's not?
+ - not arbitrarily small
+ - not separated by technology boundaries
+ - does not force technology/language/framework
+ - products, not projects
+ - not centrally governed
+
+Key Principles:
+- Business need should drive, not infatuation
+
+- Is Evolutionary
+	-Solve only what's well understood at anytime
+	-Apply last responsible moment
+
+- Different Bounded context == different service
+	-Domain Driven Design
+
+- Each service should have a single responsibility
+ -Cohesive
+	-Small enough to understand and easily maintain 
+	
+- Make it easy to rewrite and replace
+
+-Decoupled and autonomous
+	-Embed the container within each application
+	-Each application deployed and tested individually
+	-Truly encapsulated
+	- No centralized database
+  - No distributed transactions
+  - Technology agnostic communication
+
+- No central governance
+  -deploy independently
+  -evolve independently
+ - different services, different small teams
+ - decentralized governance
+ - different lifecycle and development cycle
+
+- Manage proper semantic versioning
+
+- Resilient
+	-Failure as first class citizen
+	-Resilient, withstand and isolate failures
+	-Fail fast
+	-Use circuit breakers
+	
+-Automated
+  -Not an afterthought
+  -From the beginning
+  -Deployment
+	-Testing
+	-Scaling
+
+-Monitored
+  -aggregated view
+  -correlation ids
+
+Summary:
+
+References:
+"Building Microservices: Designing Fine-Grained Systems, Sam Newman, O'Reilly.

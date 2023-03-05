@@ -1,0 +1,100 @@
+Exploring Java 9 Modularization
+Venkat Subramaniam
+Email: venkats@agiledeveloper.com
+Twitter: @venkat_s
+http://www.agiledeveloper.com download link
+
+Modules:
+-What's the problem?
+ - large jars, especially rt.jar
+ - lack of clarify on dependencies
+ - public is too open
+-Packages into modules
+-JDK is modularized, we can modularize our code same way
+-Rule: no cycles
+-https://bugs.openjdk.java.net/secure/attachment/57772/jdk.png
+-What's a module?
+  - a collection of code (packages) and data
+  - has a name
+  - tells what it needs (requires)
+  - tells what it provides (exports)
+ 
+Creating Modules:
+- Let's define a module
+- module-info.java in a top level directory
+- requires
+- exports
+- to create a module
+  - javac -d outputdir path/module-info.java path/package/source.java
+  - jar -c -f mlib/filename.jar -C outputdir .
+-to use a module
+  - javac -p mlib ...
+  - jar ... --main-class package.classname
+  - java -p mlib -m modulename
+    or
+  - java -p mlib -m modulename/package.mainclassname
+
+Visibility:
+- Readability
+	- A module "reads" the modules it depends on
+- exports
+- public is not the same any more
+- public + exports becomes visible
+- public with no exports is not visible
+- that's both at compile time and runtime
+
+Examining Dependency:
+- All modules depend on java.base
+- use jdeps to examine dependency
+  -s option
+- examine resolution using java -Xdiag:resolver
+- java -p ... --list-modules
+
+Implied Readability:
+- Passing on what you use to your uses
+- Explicit requires
+- implicit requires
+
+- create dependency file using jdeps for existing jar files
+  -jdeps -genmoduleinfo outputdirectory *.jar
+
+Module versioning:
+-module version
+ - provided when building the jar
+ - jar --module-version versionNumber
+ - jar -p to view the details
+ - can't have more than one of the same module in the module path
+ -current limitations
+
+Targeted Linking:        
+- linking
+  - Creating a targeted executable
+  -jlink
+	- jlink --modulepath mlib1:mlib2 --addmods mlib1 --addmods mlib2 --output myapp
+	- ./myapp/bin/java -listmods
+	- ./myapp/bin/java -m modulename  
+	
+	or
+	
+	- ./myapp/bin/myappname
+
+Transitioning:
+- automatic modules
+  - good old jars in the modules path
+	-use when transitioning your code that uses non-modularized code
+	
+Grandfathering:
+- Running pre-Java 9 code under Java 9
+ - unnamed modules
+   - all on classpath is in one big unnamed module
+   - it reads every named module
+   - it exports all its packages  
+   - code in a named module can't depend on code in an unnamed module
+
+Summary:
+
+Download:
+
+http://www.agiledeveloper.com download link
+
+

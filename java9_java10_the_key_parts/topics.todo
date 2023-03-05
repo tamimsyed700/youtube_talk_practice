@@ -1,0 +1,47 @@
+Java 9 and Java 10: The Key Parts
+Venkat Subramaniam
+Email: venkats@agiledeveloper.com
+Twitter: @venkat_s
+http://www.agiledeveloper.com download link
+
+Exciting things in Java 9 and Java 10:
+-improvements/changes
+-additions
+-advances (ahem, modules - we will not cover this in this talk)
+
+Improvements/Changes:
+-interface private methods
+-effectively final in try-with-resources
+-No _
+-Stream takeWhile, dropWhile
+-IntStream iterate
+ -without bounds
+ -with bounds
+-Optional 
+ -ifPresentOrElse
+ -or
+ -stream
+-Collectors
+	-filtering
+	-flatMapping
+	
+Additions:
+-The of methods
+ -type
+ -special for 1 or 2 values
+ -larger number of elements
+-CompletableFuture completeOnTimeout, orTimeout, ...
+- JShell
+
+Type Inference:
+-Type inference in Java - not new
+-Java 5 type inferences
+-Java 8 type inferences
+-Java 9 type inferences
+-Java 10: Local variable type inference
+
+Summary:
+
+Download:
+
+http://www.agiledeveloper.com download link

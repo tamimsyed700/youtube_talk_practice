@@ -1,0 +1,30 @@
+Error occured at Wed Jul 02 19:29:25 CDT 2003
+	- com.agiledeveloper.MyException: f1 value should be greater than zero, you gave 0
+	- call(void com.agiledeveloper.MyClass1.f1(int))
+com.agiledeveloper.MyException: f1 value should be greater than zero, you gave 0
+	at com.agiledeveloper.MyClass1.f1(MyClass1.java:13)
+	at com.agiledeveloper.MyClass1.f2(MyClass1.java:20)
+	at com.agiledeveloper.Test.main(Test.java:18)
+==============================================
+Error occured at Wed Jul 02 19:29:26 CDT 2003
+	- com.agiledeveloper.MyException: f1 value should be greater than zero, you gave 0
+	- call(void com.agiledeveloper.MyClass1.f1(int))
+com.agiledeveloper.MyException: f1 value should be greater than zero, you gave 0
+	at com.agiledeveloper.MyClass1.f1(MyClass1.java:13)
+	at com.agiledeveloper.Test.main(Test.java:19)
+==============================================
+Error occured at Tue Mar 01 17:14:58 CST 2005
+	- com.agiledeveloper.MyException: f1 value should be greater than zero, you gave 0
+	- call(void com.agiledeveloper.MyClass1.f1(int))
+com.agiledeveloper.MyException: f1 value should be greater than zero, you gave 0
+	at com.agiledeveloper.MyClass1.f1(MyClass1.java:13)
+	at com.agiledeveloper.MyClass1.f2(MyClass1.java:20)
+	at com.agiledeveloper.Test.main(Test.java:18)
+==============================================
+Error occured at Tue Mar 01 17:14:58 CST 2005
+	- com.agiledeveloper.MyException: f1 value should be greater than zero, you gave 0
+	- call(void com.agiledeveloper.MyClass1.f1(int))
+com.agiledeveloper.MyException: f1 value should be greater than zero, you gave 0
+	at com.agiledeveloper.MyClass1.f1(MyClass1.java:13)
+	at com.agiledeveloper.Test.main(Test.java:19)
+==============================================

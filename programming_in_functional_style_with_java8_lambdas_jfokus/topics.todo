@@ -1,0 +1,55 @@
+Programming in Functional Style with Java 8 Lambdas
+Venkat Subramaniam
+venkats@agiledeveloper.com
+twitter: @venkat_s
+http://www.agiledeveloper.com/downloads.html
+
+✓ Why Functional Programming?
+	✓Growth of computer applications
+	✓Two kinds of complexity
+	✓Power and perils of OO and mutable state
+	✓Emergence of multiple cores
+✓ What's wrong with mutable state?	
+  ✓ Error prone
+  ✓ Hard to reason
+  ✓ Hard to make concurrent	
+✓ What's Functional Programming?
+ ✓ What's old is new again
+ ✓ Assignment-less programming
+ ✓ Immutable state
+ ✓ Functions as first class citizens
+    ✓ Higher-Order functions
+ ✓ Functions with no side-effect
+✓What are the benefits?
+✓Functional Style vs Purely functional
+ ✓ a look at the languages
+✓What does it really mean to code in functional style?
+	✓state transformation instead of state mutation
+✓Imperative vs. declarative
+✓ Double values in a collection in Java—imperative style
+✓ Double values in a collection in Java—declarative style
+✓ Total double of values imperative style
+✓ Total double of values functional style
+✓ Declarative is expressive
+  ✓ Tell me what, not how
+  ✓ print names in uppercase - imperative
+  ✓ print names in uppercase - declarative
+✓Imperative vs Declarative
+  ✓ how               what
+  ✓ mutate	          transform
+  ✓ side-effect       pure
+  ✓ pass objects      pass functions also
+  ✓ hard to compose   functional composition
+✓ Programming with higher order functions
+  ✓ total all values
+  ✓ total select values - violation of DRY
+  ✓ removing duplication with the strategy pattern
+✓ Using higher order functions to build fluent interfaces
+✓ Execute Around Method Pattern
+✓ Function composition
+✓ Imperative style to total value of assets
+✓ Functional style to total value of assets
+✓ Parallelizing2 the total value of assets
+
+Please download the code examples and this topics list from:
+http://www.agiledeveloper.com/downloads.html

@@ -1,0 +1,29 @@
+Programming with Traits
+Venkat Subramaniam
+Email: venkats@agiledeveloper.com
+Twitter: @venkat_s
+http://www.agiledeveloper.com download link
+
+-Classes and extensibility
+-Multiple inheritance: power and limitations
+-Not possible in Java—thankfully
+-The problem
+-Java solution
+-What if the compiler can do that for us?
+-That's what traits are
+-Java 8 default methods
+-Is default methods == traits
+-Hum, sorry no
+-Why not?
+-Stack-ability
+-Traits
+-A look under the hood
+-Extending from trait
+-Instance level traits - as
+-multiple traits .withTraits,
+-chaining traits
+- Summary  
+
+Download:
+For downloading the code examples, please visit
+http://www.agiledeveloper.com/downloads.html

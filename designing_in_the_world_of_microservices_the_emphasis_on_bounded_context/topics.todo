@@ -1,0 +1,54 @@
+Designing in the World of Microservices
+Venkat Subramaniam
+Email: venkats@agiledeveloper.com
+Twitter: @venkat_s
+http://www.agiledeveloper.com download link
+  
+Topics:
+
+-What are the characteristics of good design?
+  -Extensibility
+  -Reuse
+  -SOLID principles
+  -Single Responsibility Principle
+  -YAGNI
+  -DRY
+  -high cohesion
+  -loose and low coupling
+  -encapsulation
+
+-Do these principles apply to building Microservices?
+
+-What are Microservices?
+  -A set of interconnected applications
+  -Modules that interact over the network  
+
+-How are microservices different from monoliths?
+-How are microservices different from SOA?
+
+-Key considerations
+ -automous development of services
+ -Isolated deployment
+ -Separate governance
+
+-Key design considerations
+ -encapsulation
+ -high cohesion
+ -loose and low coupling
+ -last responsible moment
+
+-Think in terms of service boundaries
+ -Different bounded context == different microservices
+ -Partitioning
+ -Inverse Conway's Manuever
+ 
+-Domain Driven Design
+-Ubiquitous language
+-Bounded Context
+-Hidden context vs. shared context
+ 
+-Don't let current perception influence your design
+-What about reuse?
+-What about keeping it DRY?
+
+-Summary

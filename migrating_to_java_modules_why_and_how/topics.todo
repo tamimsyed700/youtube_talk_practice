@@ -1,0 +1,63 @@
+Migrating to Java Modules: Why and How
+Venkat Subramaniam
+http://www.agiledeveloper.com/downloads.html
+venkats@agiledeveloper.com
+Twitter: @venkat_s
+        
+Modules:
+-Why do we need modules?
+-what's a module?
+-modules require other modules
+-modules export their packages
+ -Reuse release equivalency principle
+
+Creating Modules:
+-Defining a module
+-requires and exports
+-permissions
+
+Rules for Modules:
+-Any jar running in the classpath is called an unnamed module
+-Any traditional jar running in the modulepath is called automatic module
+-Any jar with a module descriptor running in
+	-classpath is an unnamed module
+	-modulepath is an explicitly named module
+-modules can't share packages
+-unnamed modules can talk to other unnamed modules
+-automatic modules can talk to other automatic modules
+-automatic modules can talk to unnamed modules
+-unnamed modules *can not* talk to automatic modules
+-an explicit named module can talk to other explicit named module
+-an explicit named module can talk to automatic modules
+-an explicit named module *can not* talk to unnamed modules
+-an explicit named module has to requires any modules it needs    
+	- including automatic modules (so please given a decent name)
+-an explicit named module exports only what it specifically exports
+-an automatic named modules automatically exports all its packages
+
+Legacy to Modules:
+-Starting with legacy
+-Run them all in the classpath in old Java
+-Run them all in the classpath in modern Java
+	-fix any errors
+-Run them all in modulepath
+-Give names for automatic modules
+-Convert from top to bottom to explicit modules
+
+jar1 -> jar2 -> jar3 -> jar4
+
+Start from left and move to right
+
+
+           modulepath						|							classpath
+                                |
+           explicitly named  ---x-------|
+                |               |
+                |    |----------x---------   unnamed
+                |               |              |
+                v               |              |
+            automatic  ------------------->    |
+                |               |              |
+                |               |              v
+                v               |           unnamed
+            automatic           |

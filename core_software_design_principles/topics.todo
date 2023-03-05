@@ -1,0 +1,23 @@
+Core Principles and Practices for Creating Lightweight Design
+Venkat Subramaniam
+@venkat_s
+venkats@agiledeveloper.com
+
+- Design Principles
+- Where we see them?
+- Why use them?
+- When to use them?
+- Some core principles
+- DRY—Don't Repeat Yourself
+- YAGNI—You Aren't Gonna Need It (yet)
+- SRP—Single Responsibility Principle
+  -Long methods
+  -SLAP
+  -Compose Method Pattern
+- OCP—Open Closed Principle
+- LSP—Liskov's Substitution Principle
+- DIP—Dependency Inversion Principle
+- Summary
+
+Download Code samples from:
+http://www.agiledeveloper.com/downloads.html

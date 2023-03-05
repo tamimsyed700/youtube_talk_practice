@@ -1,0 +1,20 @@
+Putting a Spark in Your Applications
+Venkat Subramaniam
+http://www.agiledeveloper.com
+venkats@agiledeveloper.com
+Twitter: @venkat_s
+
+-Java 8 Streams
+-Common operations: Map-Reduce
+-Parallel Streams
+-Limitations
+-What does Spark provide?
+-RDD: Resilient Distributed Dataset
+-Partitions and clusters
+-Pipelines—stages—shuffles
+-Tasks: code to run and the data to work with
+-Running on a single node
+-Running on multiple nodes
+-Graph Algorithms
+-Page Ranking
+-Running using GraphX

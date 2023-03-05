@@ -1,0 +1,7 @@
+Run the server
+Then telnet into it
+
+telnet localhost 8080
+(type some stuff and watch the server console)
+
+To end, hit ctrl+c in the server console

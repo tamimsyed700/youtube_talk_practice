@@ -1,0 +1,48 @@
+plugins {
+    id("com.github.johnrengelman.shadow") version "7.0.0"
+    id("io.micronaut.application") version "1.5.3"
+}
+
+version = "0.1"
+group = "com.agiledeveloper.stockinfo"
+
+repositories {
+    mavenCentral()
+}
+
+micronaut {
+    runtime("netty")
+    testRuntime("junit5")
+    processing {
+        incremental(true)
+        annotations("com.agiledeveloper.stockinfo.*")
+    }
+}
+
+dependencies {
+    implementation("io.micronaut:micronaut-http-client")
+    implementation("io.micronaut:micronaut-runtime")
+    runtimeOnly("ch.qos.logback:logback-classic")
+    implementation("io.micronaut:micronaut-validation")
+    implementation("io.micronaut.discovery:micronaut-discovery-client")
+
+    annotationProcessor("io.micronaut.data:micronaut-data-processor:2.4.7")
+    implementation("io.micronaut.data:micronaut-data-r2dbc")
+    implementation("io.micronaut.r2dbc:micronaut-r2dbc-core")
+    runtimeOnly("io.r2dbc:r2dbc-h2")
+}
+
+
+application {
+    mainClass.set("com.agiledeveloper.stockinfo.Application")
+}
+java {
+    sourceCompatibility = JavaVersion.toVersion("1.8")
+    targetCompatibility = JavaVersion.toVersion("1.8")
+}
+
+nativeImage {
+  imageName('stockinfo')
+}
+
+

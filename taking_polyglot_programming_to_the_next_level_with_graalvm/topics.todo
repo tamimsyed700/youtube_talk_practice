@@ -1,0 +1,80 @@
+Taking Polyglot Programming to the  Next Level with GraalVM
+Venkat Subramaniam
+http://www.agiledeveloper.com/downloads.html
+venkats@agiledeveloper.com
+Twitter: @venkat_s
+
+The Origin:
+-Java Compiler was written in C
+-What if the compiler can be written in Java?
+ -meta-circle Java written using Java
+ -Easier for new generation of developers to maintain
+ -modular
+ -configurable
+ -productive
+-GraalVM started as a compiler written in Java, compiled to native for performance
+
+The Polyglot Goals:
+-What if those ideas can be extended to polyglot environment
+-Native compilation for different languages
+-Interoperability between languages
+-Can lead to productivity and performance
+
+GraalVM:
+-A universal VM for multiple languages
+-Polyglot shared runtime environment
+ -Supports JVM languages (Java, Scala, Clojure, Groovy, Kotlin)
+ -JavaScript, Python, R, Ruby
+ -LLVM-based languages (C++)
+-Java (JVM languages) compiled directly, other languages compiled using Truffle
+-SubstrateVM
+-Common infrastructure, debug capabilities
+-Ahead of time (AOT) Compilation
+ -pros and cons
+ -performance, but some limitations (classes have to be known ahead to compile)
+-can run standalone or can be embedded within containers/environments
+	-OpenJDK, Node.js, MySQL, Oracle database, ...
+-Can compile to native code for performance
+
+GraalVM for Speed:
+-Compile and run using non-Graal JVM
+	-XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler
+-Compile and run in GraalVM
+-native compilation
+
+Running JavaScript:
+-js sample.js
+-node sample.js
+
+Running Ruby and Python:
+-Install using GraalVM Component Updated (gu)
+-gu install ruby
+-gu install python
+-ruby sample.rb
+-graalpython sample.py
+
+Running Kotlin:
+-compile using kotlinc-jvm
+-Run using the GraalVM
+
+Intermixing Languages:
+-org.graalvm.polyglot
+-Context.create("js")
+-Value bindings = context.getBindings("js")
+-bindings.putMember
+-context.eval("js", script)
+-getMemeber
+
+Debugging:
+-ruby --inspect sample.rb
+
+Summary:
+-Polyglot shared environment
+-Universal JVM
+-native builds
+-Intermix languages
+-performance plus productivity
+
+Downloads:
+-https://www.graalvm.org/downloads/
+-http://www.agiledeveloper.com/downloads.html

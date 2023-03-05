@@ -1,0 +1,41 @@
+Java 8 Programming Idioms
+Venkat Subramaniam
+Email: venkats@agiledeveloper.com
+Twitter: @venkat_s
+http://www.agiledeveloper.com download link
+
+Idioms:
+-why should we focus idioms?
+ 
+Quick Review:
+-Lambda expressions
+-Higher-Order Functions
+-Function Composition
+-Method References
+ -routing as an argument to an instance method
+ -routing as an argument to a static method
+ -routing as a argument to an instance method on this
+ -routing as a target                
+ -routing two parameters as arguments
+ -routing as a target and an argument
+
+Better Idiomatic Practices:
+-think declarative before functional
+-apply the function pipeline pattern
+-vertically align dots
+-use range to iterate
+-treat lambdas as glue code
+-use method references where possible
+-prefer better parameter names over types 
+-Get used to cascading lambdas
+-Avoid shared mutability
+-Keep lambdas pure
+
+References:
+http://martinfowler.com/articles/collection-pipeline
+https://pragprog.com/book/vsjava8/functional-programming-in-java
+http://blog.agiledeveloper.com/2015/07/the-declarative-style.html
+http://blog.agiledeveloper.com/2015/06/lambdas-are-glue-code.html
+http://blog.agiledeveloper.com/2016/02/get-comfortable-with-type-inference.html
+http://blog.agiledeveloper.com/2015/12/what-are-pure-functions.html
+http://blog.agiledeveloper.com/2015/12/benefits-of-pure-functions.html

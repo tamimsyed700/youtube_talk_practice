@@ -1,0 +1,53 @@
+Designing Reactive Systems: Creating Highly Responsive and Resilient Applications
+Venkat Subramaniam
+http://www.agiledeveloper.com
+venkats@agiledeveloper.com
+Twitter: @venkat_s
+
+Reactive Programming:
+-What's reactive programming?
+-Why yet another programming model?
+-Reactive manifesto
+-Characteristics of a Reactive Application
+ -Elastic
+ -Message-Driven
+ -Responsive
+ -Resilient
+
+How does it work?:
+-designing for elasticity
+-designing message-driven applications
+-Providing responsiveness
+	-Efficiency is attained not by doing tasks faster, 
+ 		but by avoiding those that should't be done in the first place
+-Making it resilient
+
+Programming Libraries and APIs:
+-Observable
+-Iterators vs.
+-Observable pattern vs.
+-Lazy evaluations
+-data vs. error
+-synchronous vs. asynchronous
+-Error handling
+
+Design concerns:
+-Partition based on user location/query
+-Sharding and replication
+-Failure as first class citizen
+-Not an all or noting proposition
+ -Network failures
+ -Database failures
+ -Provide redundancies across geographical locations
+ -load related failures
+	-backpressures
+-Use Circuit Breakers
+-Improved performance using parallelization
+-CAP Theorem
+	
+	
+References:
+http://www.reactivemanifesto.org
+
+Download Code samples from:
+http://www.agiledeveloper.com/downloads.html

@@ -1,0 +1,46 @@
+Architecting and Designing Reactive System and Applications
+Venkat Subramaniam
+http://www.agiledeveloper.com
+venkats@agiledeveloper.com
+Twitter: @venkat_s
+
+Reactive Systems:
+-The Modern Challenges
+-Users
+-Big Data
+-Ubiquitous Computing
+-Meeting the challenges
+-Nothing new and yet something new
+-Characteristics
+ -Elastic
+ -Message-Driven
+ -Responsive
+ -Resilient
+
+How does it work?:
+-designing for elasticity
+-designing message-driven applications
+-Providing responsiveness
+	-Efficiency is attained not by doing tasks faster, 
+ 		but by avoiding those that should't be done in the first place
+-Making it resilient
+
+Programming Model:
+-Streams of data
+-dataflow computing
+-Lazy evaluations
+-error handling
+
+Scaling the Architecture:
+-Measuring up the scala
+-Partition, Sharding, and Replication
+-Failure as first class citizen
+-Dealing with failures
+-Circuit Breakers
+-Parallel vs. Asynchronous	
+	
+References:
+http://www.reactivemanifesto.org
+
+Download Code samples from:
+http://www.agiledeveloper.com/downloads.html

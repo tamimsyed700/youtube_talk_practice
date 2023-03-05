@@ -1,0 +1,57 @@
+Micronaut: The New Wiz on the Block
+Venkat Subramaniam
+http://www.agiledeveloper.com/downloads.html
+venkats@agiledeveloper.com
+Twitter: @venkat_s
+
+Micronaut:          
+-Useful to build
+ -Microservices
+ -Serverless Applications
+ -Reactive Applications
+ -Non-blocking asynchronous programs
+
+-What does it provide
+ -Speed
+ -Small footprint
+ -declarative in nature
+ -compile time dependency injection
+ -Natively cloud-native
+ -built in circuit breakers
+ -compile-time metaprogramming
+
+Let's Create a Microservices:
+-Let's create an app
+-Preparing common code
+-Creating a Microservice
+ --features=discovery-consul
+-Create a controller
+-start consul
+-Exercise the controller
+-Test the controller
+-Move logic to a service
+-Inject the service into the controller
+-Test the controller again
+-View consul registry
+
+Let's Create Another Microservices:
+-First, let's fix the port
+-Creating a new app
+-Create a controller
+-inject the other services reference into the controller
+-Round robin load balancing
+
+Dealing with Failures:
+-Fallback
+-Circuit breaker
+
+Reactive Flow:
+-What if the service takes time to response
+-Stream of data
+
+Summary:
+
+References:
+https://micronaut.io/
+https://guides.micronaut.io/
+http://www.agiledeveloper.com/downloads.html

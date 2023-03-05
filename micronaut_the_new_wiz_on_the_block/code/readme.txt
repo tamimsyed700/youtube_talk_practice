@@ -1,0 +1,1 @@
+Please view the run.sh in each directory for commands to run.

@@ -1,0 +1,10 @@
+staring method1*****
+staring method2*****
+in method1("Stu")clojure.lang.PersistentList$EmptyList@1~~~~~~
+in method2clojure.lang.PersistentList$EmptyList@1("Sara")~~~~~~
+in method1("Stu")("Bob")~~~~~~
+staring method2*****
+in method2("Stu")("Sara" "Bob")~~~~~~
+in method2("Nancy" "Stu")("Sara" "Bob")~~~~~~
+(Nancy Stu)
+(Sara Bob)

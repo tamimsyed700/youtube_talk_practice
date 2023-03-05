@@ -1,0 +1,36 @@
+Designing for Resilience and Scale
+Venkat Subramaniam
+Email: venkats@agiledeveloper.com
+Twitter: @venkat_s
+http://www.agiledeveloper.com download link
+
+Scale:
+-What is scale?
+-How do we scale?
+-How failure affects scaling?
+
+Resilience:
+-Systems will fail
+-Failure should not cripple the system or hurt/damage/cost the users
+-Failures, if not designed well, can affect scale
+
+Resilience to Scale:
+-avoid single point of failure
+ -the redundancy that was not really redundant
+-resource exhaustion
+ -the portal failure
+-remember Murphy's law
+ -when theory becomes reality
+-never make calls without timeouts
+ -the mystery of the missing data            
+
+Designing for Resilience:
+-design and verify redundancy
+-properly handle each exception
+ -take exceptions seriously
+-audit code for correctness
+-use timeouts
+-avoid fast retries
+-use circuit breakers
+-fail fast and fail gracefully
+-isolate services to avoid disruptions

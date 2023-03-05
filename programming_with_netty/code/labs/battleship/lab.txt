@@ -1,0 +1,18 @@
+Game of battleships - a simplified version.
+
+The server will allow only two players to connect.
+
+Each client when it start up, allows user to select locations to place their 
+ships (on a grid of 10 x 10 - letter x number.
+
+Each ship occupied only one cell on the grid. Each player places 10 ships.
+
+Each client remembers locations of its ships and locations where you bombed on
+the opponents side. Hits are marked and misses are marked also.
+
+Game ends when one of the player hits all the opponents ships.
+
+Create a Cell class which has a letter and a number. When you bomb a cell, pass
+the Cell instance to the server. The server will pass a cell instance to the other client.
+
+The client will reply back with a cell if it was hit or not.

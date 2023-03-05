@@ -1,0 +1,18 @@
+programming with Netty:
+Venkat Subramaniam
+venkats@agiledeveloper.com
+Twitter: @venkat_s
+  http://www.agiledeveloper.com/downloads.html:
+- What's Netty?
+- The problem it solves?
+- The Netty Architecture
+- Creating a simple server
+- Receving messages
+- Sending messages
+- Shutting down the server
+- Creating a client to send receive messages
+- Shutting down the client
+ Lab:
+- Sending POJOs
+ Lab:
+- Summary

@@ -1,0 +1,3 @@
+Write a server that will allow multiple clients to connect and send text.
+The text is then displayed in each of the connected clients. Clients
+can connect and disconnect at any time.
